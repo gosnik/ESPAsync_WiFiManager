@@ -803,7 +803,5 @@ class ESPAsync_WiFiManager
 };
 
 
-#include "ESPAsync_WiFiManager-Impl.h"
-
 #endif    // ESPAsync_WiFiManager_h
 
