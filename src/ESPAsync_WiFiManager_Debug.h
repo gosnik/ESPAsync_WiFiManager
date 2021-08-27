@@ -52,6 +52,7 @@
 #ifdef ESPASYNC_WIFIMGR_DEBUG_PORT
   #define DBG_PORT_ESP_WM      ESPASYNC_WIFIMGR_DEBUG_PORT
 #else
+  #include <Arduino.h>
   #define DBG_PORT_ESP_WM      Serial
 #endif
 
@@ -63,7 +64,7 @@
 // 4: DEBUG: errors, warnings, informational and debug
 
 #ifndef _ESPASYNC_WIFIMGR_LOGLEVEL_
-  #define _ESPASYNC_WIFIMGR_LOGLEVEL_       0
+  #define _ESPASYNC_WIFIMGR_LOGLEVEL_       4
 #endif
 
 /////////////////////////////////////////////////////////

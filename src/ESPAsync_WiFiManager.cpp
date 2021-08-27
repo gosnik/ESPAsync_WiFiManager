@@ -2142,11 +2142,11 @@ void ESPAsync_WiFiManager::handleReset(AsyncWebServerRequest *request)
   //WiFi.disconnect(true); // Wipe out WiFi credentials.
   //////
 
-#ifdef ESP8266
-  ESP.reset();
-#else		//ESP32
-  ESP.restart();
-#endif
+// #ifdef ESP8266
+//   ESP.reset();
+// #else		//ESP32
+//   ESP.restart();
+// #endif
 
   delay(2000);
 }
